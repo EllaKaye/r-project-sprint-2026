@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "code-of-conduct.html",
     "href": "code-of-conduct.html",
     "title": "Code of Conduct",
@@ -117,5 +110,12 @@
     "title": "R Project Sprint 2026",
     "section": "Sponsors",
     "text": "Sponsors\n\nCore funding\nProviding sponsorship for general participant travel and accommodation, plus venue and catering costs\n\n\n\n\n\n\n\n\nPlatinum sponsors\nProviding sponsorship for R Core travel.\n\nThe R Foundation\n\nFurther sponsors welcome to support participant travel, accommodation and/or social events. Sponsors will be acknowledged on this website, on the R Contributors Mastodon account, and in reports of the sprint. Please contact h.l.turner@bham.ac.uk to discuss!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
