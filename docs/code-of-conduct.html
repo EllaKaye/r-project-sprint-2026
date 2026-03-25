@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54d2793665b9bcd67158332d17101db9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a26f3680889bc016604be2101547878f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,6 +80,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">R Project Sprint 2026</span>
     </a>
@@ -154,8 +157,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p>The organizers of R Project Sprint 2026 are dedicated to providing a harassment-free conference experience for everyone regardless of age, gender, sexual orientation, disability, physical appearance, race, or religion (or lack thereof).</p>
 <p>All participants at R Project Sprint 2026 are required to agree to the following code of conduct.</p>
-<p>The code of conduct applies to all sprint activities including<br>
-social events. It extends to event-specific exchanges on social media, for instance posts tagged with the identifier of the sprint (#RSprint2023) and replies to such posts.</p>
+<p>The code of conduct applies to all sprint activities including social events. It extends to event-specific exchanges on social media, for instance posts tagged with the identifier of the sprint (#RSprint2026) and replies to such posts.</p>
 <p>Organizers will enforce this code throughout and expect cooperation in ensuring a safe environment for all.</p>
 <section id="expected-behaviour" class="level2">
 <h2 class="anchored" data-anchor-id="expected-behaviour">Expected Behaviour</h2>
@@ -200,13 +202,15 @@ social events. It extends to event-specific exchanges on social media, for insta
 <section id="what-to-do-if-you-witness-or-are-subject-to-unacceptable-behaviour" class="level2">
 <h2 class="anchored" data-anchor-id="what-to-do-if-you-witness-or-are-subject-to-unacceptable-behaviour">What To Do If You Witness or Are Subject To Unacceptable Behaviour</h2>
 <p>Alert the organizing team if you notice someone in distress, or observe violations of this code of conduct, even if they seem inconsequential.</p>
-<p>Reports should be addressed to <a href="mailto:r-project-sprint@livewarwickac.onmicrosoft.com">r-project-sprint@livewarwickac.onmicrosoft.com</a>. If the report concerns someone on the <a href="./index#Local-organizing-team">local organizing team</a>, please contact other members of the team directly. If you still have concerns about a conflict of interest, you are welcome to contact the <a href="https://reportandsupport.warwick.ac.uk/">University of Warwick Report + Support</a> service.</p>
+<p>Reports should be addressed to <a href="mailto:r-project-sprint-coc@groups.io">r-project-sprint-coc@groups.io</a>. If the report concerns someone on the <a href="./index#local-organizing-team">local</a><a href="./index#Local-organizing-team">organizing team</a>, please contact other members of the team directly.<br>
+<br>
+<!-- If you still have concerns about a conflict of interest, you are welcome to contact ... --></p>
 <p>We will take all reports by R Project Sprint 2026 participants seriously. This includes incidents outside our spaces and at any point in time. The organizing team reserve the right to exclude people from the sprint based on their past behaviour, including behaviour outside R Project Sprint 2026 spaces and behaviour towards people who are not part of the sprint.</p>
 <p>We will respect confidentiality requests for the purpose of protecting targets of harassing behaviour. We will not name victims without their affirmative consent. Correspondence is handled confidentially and deleted after the case is resolved. All data is stored securely, access will be limited to the members of the organizing team who receive the report.</p>
 <p>The organizing team will also provide support to victims, which may include:</p>
 <ul>
 <li><p>providing an escort,</p></li>
-<li><p>contacting the on-campus Community Safety Team or off campus Emergency Services,</p></li>
+<li><p>contacting the on-campus Security Team or off campus Emergency Services,</p></li>
 </ul>
 <p>or otherwise assisting those experiencing harassment to ensure that they feel safe for the duration of the conference. Assistance will only be provided with affirmative consent of the victim.</p>
 </section>
@@ -269,13 +273,14 @@ social events. It extends to event-specific exchanges on social media, for insta
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

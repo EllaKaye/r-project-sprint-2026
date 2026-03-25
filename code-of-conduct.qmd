@@ -6,8 +6,7 @@ The organizers of R Project Sprint 2026 are dedicated to providing a harassment-
 
 All participants at R Project Sprint 2026 are required to agree to the following code of conduct.
 
-The code of conduct applies to all sprint activities including\
-social events. It extends to event-specific exchanges on social media, for instance posts tagged with the identifier of the sprint (#RSprint2023) and replies to such posts.
+The code of conduct applies to all sprint activities including social events. It extends to event-specific exchanges on social media, for instance posts tagged with the identifier of the sprint (#RSprint2026) and replies to such posts.
 
 Organizers will enforce this code throughout and expect cooperation in ensuring a safe environment for all.
 
@@ -54,7 +53,9 @@ The organizing team reserves the right to determine the appropriate response for
 
 Alert the organizing team if you notice someone in distress, or observe violations of this code of conduct, even if they seem inconsequential.
 
-Reports should be addressed to [r-project-sprint\@livewarwickac.onmicrosoft.com](mailto:r-project-sprint@livewarwickac.onmicrosoft.com). If the report concerns someone on the [local organizing team](/index#Local-organizing-team), please contact other members of the team directly. If you still have concerns about a conflict of interest, you are welcome to contact the [University of Warwick Report + Support](https://reportandsupport.warwick.ac.uk/) service.
+Reports should be addressed to [r-project-sprint-coc\@groups.io](mailto:r-project-sprint-coc@groups.io). If the report concerns someone on the [local](/index#local-organizing-team)[ organizing team](/index#Local-organizing-team), please contact other members of the team directly. \
+\
+<!-- If you still have concerns about a conflict of interest, you are welcome to contact ... -->
 
 We will take all reports by R Project Sprint 2026 participants seriously. This includes incidents outside our spaces and at any point in time. The organizing team reserve the right to exclude people from the sprint based on their past behaviour, including behaviour outside R Project Sprint 2026 spaces and behaviour towards people who are not part of the sprint.
 
@@ -64,7 +65,7 @@ The organizing team will also provide support to victims, which may include:
 
 -   providing an escort,
 
--   contacting the on-campus Community Safety Team or off campus Emergency Services,
+-   contacting the on-campus Security Team or off campus Emergency Services,
 
 or otherwise assisting those experiencing harassment to ensure that they feel safe for the duration of the conference. Assistance will only be provided with affirmative consent of the victim.
 
