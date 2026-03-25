@@ -14,12 +14,14 @@ website:
       - icon: github
         href: https://github.com/r-devel/r-project-sprint-2026
   site-url: https://contributor.r-project.org/r-project-sprint-2026
+  favicon: media/favicon.png
 
 format:
   html:
-    theme: yeti
     css: styles.css
-    toc: true
+    link-external-newwindow: true
+    toc: true  
+    email-obfuscation: references
 
 editor: visual
 
